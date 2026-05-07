@@ -15,11 +15,10 @@ X = df[['Coding_Skills', 'Internship_Done']] # Sawaal (Features)
 y = df['Result'] # Jawab (Target)
 
 # 2. MODEL BUILDING
-# Humne 'entropy' wala formula chuna confusion naapne ke liye
 clf = DecisionTreeClassifier(criterion='entropy')
 clf.fit(X, y)
 
-# 3. VISUALIZATION (Tree ki Photo)
+# 3. VISUALIZATION 
 plt.figure(figsize=(12,8))
 plot_tree(clf, 
           feature_names=['Coding', 'Internship'], 
