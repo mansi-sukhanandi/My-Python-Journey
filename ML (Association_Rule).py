@@ -1,7 +1,7 @@
 import pandas as pd
 from mlxtend.frequent_patterns import apriori, association_rules
 
-# Data ko sahi format mein (Events as Columns)
+# Data 
 data = {
     'Unauthorized_Login': [1, 1, 0, 1, 1], # 1 matlab hua, 0 matlab nahi
     'File_Access':        [1, 1, 1, 0, 1],
