@@ -6,8 +6,8 @@ from sklearn.cluster import AgglomerativeClustering
 # 1. Data (Humaray 3 types ke Attacks)
 # [X-axis: Frequency, Y-axis: Severity]
 X = np.array([
-    [10, 10], [12, 11],  # A & B (Login Attacks - Paas paas)
-    [90, 85], [95, 90]   # C (Database Attacks - Door)
+    [10, 10], [12, 11], 
+    [90, 85], [95, 90]   
 ])
 
 # 2. Dendrogram Banana (Tree Generation)
