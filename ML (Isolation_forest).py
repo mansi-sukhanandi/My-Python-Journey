@@ -8,12 +8,10 @@ X_normal = np.random.normal(size=(50, 2), loc=0)
 # 5 alag/door khade points (Anomalies)
 X_outliers = np.random.uniform(low=4, high=6, size=(5, 2)) 
 
-# Dono ko aapas mein mila do
+# Dono ko aapas mein milana
 X = np.vstack([X_normal, X_outliers])
 
 # 2. Isolation Forest Model taiyar karna
-# n_estimators = 100 trees banenge forest mein
-# contamination = 0.10 (Humein lagta hai 10% kachra ho sakta hai)
 model = IsolationForest(n_estimators=100, contamination=0.10, random_state=42)
 model.fit(X)
 
